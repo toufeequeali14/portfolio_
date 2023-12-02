@@ -10,6 +10,8 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Contact from './components/Contact';
 import { buyerReview, sellerReview } from './components/Reviews';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -17,10 +19,20 @@ import { buyerReview, sellerReview } from './components/Reviews';
 
 
 
-function App() {
+function App() { 
   
   return (
+    
+
     <div>
+      <div>
+        <BrowserRouter>
+            <Routes>
+              <Route index element={<Projects/>} />
+            </Routes>
+        </BrowserRouter>
+
+      </div>
       <Header />
       <HeroSection />
       <Projects />
