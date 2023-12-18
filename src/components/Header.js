@@ -22,9 +22,12 @@ const Header = ({ navMargin }) => {
             navbarScroll
           >
             {/* <Nav.Link as={Link} to='/projects'>Projects</Nav.Link> */}
+
+       
             <Nav.Link as={Link} to='/projects'>Projects</Nav.Link>
+            
             <NavDropdown title="Reviews" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Buyer Review</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/buyer'>Buyer Review</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Seller Review
               </NavDropdown.Item>
